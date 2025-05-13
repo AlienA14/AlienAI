@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AlienAI</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">👽 AlienAI</div>
+    <div class="chat-window" id="chat-window"></div>
+    <div class="chat-controls">
+      <input id="text-input" type="text" placeholder="Escribe algo..." />
+      <button onclick="generateText()">Enviar</button>
+    </div>
+    <div class="tool-panel">
+      <input id="image-prompt" type="text" placeholder="Describe una imagen" />
+      <button onclick="generateImage()">Generar Imagen</button>
+      <input type="file" id="file-upload" />
+      <button onclick="uploadFile()">Subir Archivo</button>
+      <button onclick="startVoiceRecognition()">🎤 Hablar</button>
+    </div>
+    <div id="image-output"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
